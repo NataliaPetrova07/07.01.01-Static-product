@@ -1,6 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: O;
+    padding: 0;
+}
+
 body {
     background-color: rgb(215, 214, 240);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    margin: 2vw;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .mainNav {
@@ -16,34 +37,131 @@ body {
 
 .mainNav a {
     margin-left: 2vw;
+    color: black;
+}
+
+.mainNav a:hover {
+    font-weight:600;
 }
 
 .categoryList {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2vw;
-    margin: 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3vw;
 }
 
-h2 {
+.categoryList a {
+    color: black;
+}
+
+.categoryList h2 {
     text-align: center;
 }
 
 .categoryList section {
     background-color: white;
     display: grid;
-    cursor: pointer;
     transition: all .2s ease-in-out;
     background-color: rgb(237, 236, 247)
-}
-
-.categoryList img {
-    max-width: 100%;
-    height: auto;
-    order: -1;
 }
 
 .categoryList section:hover {
     transform: scale(1.1);
     background-color: white;
 }
+
+.categoryAccessories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 3vw;
+}
+
+.smallProduct {
+    display: grid;
+}
+.smallProduct a {
+    text-align: end;
+}
+.brandname {
+    text-transform: uppercase;
+}
+
+.light {
+    color: cornflowerblue;
+}
+
+.discount {
+    color: crimson;
+    text-align: end;
+}
+
+.price {
+    font-weight: 700;
+    text-align: end;
+}
+.product main {
+    display: grid;
+}
+
+@media screen and (min-width: 1000px) {
+    .product main {
+      grid-template-columns: 1fr 310px;
+    }
+    .info {
+      order: 0;
+    }
+    .purchaseBox {
+      order: 2;
+      transform: translate(-50px, -100px);
+    }
+  }
+
+.breadcrumbs {
+    display: flex;
+    list-style-type: none;
+}
+
+.breadcrumbs li {
+    padding-right: 1vw;
+}
+
+.purchaseBox {
+    background: rgb(237, 236, 247);
+    padding: 1rem;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-left: 0;
+}
+
+.home h2 {
+    text-align: center;
+}
+
+.info {
+    padding: 1rem;
+  }
+.product select {
+    min-width: 100px;
+  }
+.product main {
+    display: grid;
+  }
+.product main .breadcrumbs,
+.product main img {
+    grid-column: 1/-1;
+}
+.purchaseBox form label {
+    gap: 1rem;
+}
+.purchaseBox button {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    height: 30px;
+}
+
