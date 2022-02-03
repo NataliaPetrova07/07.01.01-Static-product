@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(215, 214, 240);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainNav {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.mainNav h1 {
+    margin-right: auto;   
+}
+
+.mainNav a {
+    margin-left: 2vw;
+}
+
+.categoryList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2vw;
+    margin: 2vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+.categoryList section {
+    background-color: white;
+    display: grid;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: rgb(237, 236, 247)
+}
+
+.categoryList img {
+    max-width: 100%;
+    height: auto;
+    order: -1;
+}
+
+.categoryList section:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
