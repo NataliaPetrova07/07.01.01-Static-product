@@ -70,7 +70,7 @@ a {
     background-color: white;
 }
 
-.categoryAccessories {
+ #categoryAccessories {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
     gap: 3vw;
@@ -97,8 +97,13 @@ a {
 
 .price {
     font-weight: 700;
-    text-align: end;
+    margin: 0;
 }
+
+.discounted p {
+margin: 0;
+}
+
 .product main {
     display: grid;
 }
@@ -165,3 +170,33 @@ dd {
     height: 30px;
 }
 
+#categoryAccessories article.soldOut img {
+    opacity: 0.5;
+}
+#categoryAccessories article {
+    position: relative;
+}
+#categoryAccessories article.soldOut::before {
+    content: "Sold Out";
+    position: absolute;
+    color: white;
+    font-size: 5vw;
+    text-shadow: 0 0 5vw black;
+    padding: 1rem;
+    top: 28%;
+    left: 20%;
+}
+
+#categoryAccessories article .discounted,
+#categoryAccessories article .price span {
+    display: none;
+}
+
+#categoryAccessories article.onSale .discounted {
+    display: flex;
+    justify-content: space-between;
+}
+
+#categoryAccessories article.onSale .price span {
+    display: initial;
+}

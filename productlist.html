@@ -20,66 +20,93 @@
     </header>
     <main>
         <h2>Accessories</h2>
-        <div class="categoryAccessories">
-            <article class="smallProduct">
+        <div id="categoryAccessories">
+            <template id="productlistTemplate">
+                <article class="smallProduct">
+                    <img class="productimage" src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
+                    <p class="so"></p>
+                    <h3>Puma Deck Navy Blue Backpack</h3>
+                    <p class="price"><span>Before </span>DKK 1299,-</p>
+                    <div class="discounted">
+                        <p>Now DKK 1560,-</p>
+                        <p class="discount">-55%</p>
+                    </div>
+                    <a href="product.html">view item</a>
+                </article>
+            </template>
+            <!-- <article class="smallProduct onSale">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
                 <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
+                <p class="price"><span>Before </span>DKK 1299,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-55%</p>
+                </div>
+                <a href="product.html">view item</a>
+            </article>
+            <article class="smallProduct soldOut">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
+                <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
+                <p class="price"><span>Before </span>DKK 1299,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-55%</p>
+                </div>
+                <a href="product.html">view item</a>
+            </article>
+            <article class="smallProduct soldOut onSale">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
+                <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
+                <p class="price"><span>Before </span>DKK 1299,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-55%</p>
+                </div>
                 <a href="product.html">view item</a>
             </article>
             <article class="smallProduct">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
                 <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
+                <p class="price"><span>Before </span>DKK 1299,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-55%</p>
+                </div>
                 <a href="product.html">view item</a>
             </article>
             <article class="smallProduct">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
                 <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
+                <p class="price"><span>Before </span>DKK 1299,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-55%</p>
+                </div>
                 <a href="product.html">view item</a>
             </article>
             <article class="smallProduct">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
                 <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
+                <p class="price"><span>Before </span>DKK 1299,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-55%</p>
+                </div>
                 <a href="product.html">view item</a>
             </article>
             <article class="smallProduct">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
                 <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
+                <p class="price"><span>Before </span>DKK 1299,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-55%</p>
+                </div>
                 <a href="product.html">view item</a>
-            </article>
-            <article class="smallProduct">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
-                <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
-                <a href="product.html">view item</a>
-            </article>
-            <article class="smallProduct">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
-                <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
-                <a href="product.html">view item</a>
-            </article>
-            <article class="smallProduct">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
-                <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-                <p class="price discount">DKK 1299</p>
-                <div class="discount"><p>-55%</p></div>
-                <a href="product.html">view item</a>
-            </article>
+            </article> -->
         </div>
     </main>
-
+    <script src="productlist.js"></script>
 </body>
 
 </html>
