@@ -36,8 +36,8 @@ function showProduct(product) {
     // clone it
     const copy = template.cloneNode(true);
     // change image
-    // document.querySelector(".smallProduct img").src=`https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-    // document.querySelector(".smallProduct img").alt=product.productdisplayname;
+    copy.querySelector(".smallProduct img").src=`https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+    copy.querySelector(".smallProduct img").alt=product.productdisplayname;
     // change content
     copy.querySelector("h3").textContent = `${product.brandname} | ${product.productdisplayname}`;
 
