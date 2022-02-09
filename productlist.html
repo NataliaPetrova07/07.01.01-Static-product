@@ -11,7 +11,7 @@
 
 <body>
     <header class="mainNav">
-        <h1>Logo</h1>
+        <h1>APPEAL</h1>
         <nav>
             <a href="#">Categories</a>
             <a href="category.html">Brands</a>
@@ -19,7 +19,12 @@
         </nav>
     </header>
     <main>
-        <h2>Accessories</h2>
+        <ol class="breadcrumbs">
+            <li class="aHome"><a href="index.html">Home</a></li>
+            <li><a href="category.html"><span class="arrow">></span> Categories</a></li>
+            <li class="category"><a href="productlist.html"><span class="arrow">></span> Accessories</a></li>
+        </ol>
+        <h2 class="sectionHeadline">Accessories</h2>
         <div id="categoryAccessories">
             <template id="productlistTemplate">
                 <article class="smallProduct">
@@ -31,7 +36,7 @@
                         <p>Now DKK 1560,-</p>
                         <p class="discount">-55%</p>
                     </div>
-                    <a href="product.html">view item</a>
+                    <a href="product.html?id=1163">view item</a>
                 </article>
             </template>
             <!-- <article class="smallProduct onSale">
