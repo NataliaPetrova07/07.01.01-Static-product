@@ -7,23 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body class="product">
     <header class="mainNav">
         <h1>APPEAL</h1>
-        <nav>
-            <a href="#">Categories</a>
+        <nav class="desktop">
+            <a href="category.html">Categories</a>
             <a href="category.html">Brands</a>
-            <a href="#">Seasons</a>
+            <a href="category.html">Seasons</a>
         </nav>
     </header>
     <main>
         <ol class="breadcrumbs">
             <li class="aHome"><a href="index.html">Home</a></li>
-            <li><a href="category.html"><span class="arrow">></span> Categories</a></li>
-            <li class="category"><a href="productlist.html"><span class="arrow">></span> Accessories</a></li>
-            <li class="productname liCurrent"><span class="arrow">></span> PUMA Navy Blue Backpack</li>
+            <div class="arrow">></div>
+            <li><a href="category.html">Categories</a></li>
+            <div class="arrow">></div>
+            <li><a class="category" href="productlist.html">Accessories</a></li>
+            <div class="arrow">></div>
+            <li class="productname liCurrent">PUMA Navy Blue Backpack</li>
         </ol>
         <img class="productimage" src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Puma Deck Navy Blue Backpack" />
         <section class="purchaseBox">

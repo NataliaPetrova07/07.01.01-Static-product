@@ -7,37 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product list</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="productlist">
     <header class="mainNav">
         <h1>APPEAL</h1>
-        <nav>
-            <a href="#">Categories</a>
+        <nav class="desktop">
+            <a href="category.html">Categories</a>
             <a href="category.html">Brands</a>
-            <a href="#">Seasons</a>
+            <a href="category.html">Seasons</a>
         </nav>
     </header>
     <main>
         <ol class="breadcrumbs">
             <li class="aHome"><a href="index.html">Home</a></li>
-            <li><a href="category.html"><span class="arrow">></span> Categories</a></li>
-            <li class="category liCurrent"><a href="productlist.html"><span class="arrow">></span> Accessories</a></li>
+            <div class="arrow">></div>
+            <li><a href="category.html">Categories</a></li>
+            <div class="arrow">></div>
+            <li class="category liCurrent">Accessories</li>
         </ol>
-        <h2 class="sectionHeadline">Accessories</h2>
-        <div class="littleHeadline"><p>10 products found</p></div>
+        <h2 id="categoryH2" class="sectionHeadline">Accessories</h2>
         <div id="categoryAccessories">
             <template id="productlistTemplate">
                 <article class="smallProduct">
                     <img class="productimage" src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="">
-                    <p class="so"></p>
                     <h3>Puma Deck Navy Blue Backpack</h3>
-                    <p class="price"><span>Before </span>DKK 1299,-</p>
-                    <div class="discounted">
-                        <p>Now DKK 1560,-</p>
-                        <p class="discount">-55%</p>
+                    <div class="prices">
+                        <div class="nodiscount">
+                            <p class="price"><span>Before </span>DKK 1299,-</p>
+                            <a href="product.html?id=1163">view item</a>
+                        </div>
+                        <p class="discounted discount">-55%</p>
+                        <div class="discounted">
+                            <p>Now DKK 1560,-</p>
+                            <a href="product.html?id=1163"></a>
+                        </div>
                     </div>
-                    <a href="product.html?id=1163">view item</a>
                 </article>
             </template>
             <!-- <article class="smallProduct onSale">
