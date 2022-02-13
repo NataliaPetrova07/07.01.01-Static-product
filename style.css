@@ -58,9 +58,11 @@ h3 {
     display: flex;
     overflow: hidden;
     align-items: center;
-    background-color: var(--c6-color);
     color: var(--c0-color);
     height: 5.5rem;
+}
+header {
+    background-color: var(--c6-color);
 }
 .mainNav h1 {
     text-align: center;
@@ -96,7 +98,7 @@ h3 {
     font-size: var(--size2);
     letter-spacing: .3rem;
     text-transform: uppercase;
-    height: 25vh;
+    height: 10vh;
     margin: 0;
     color: var(--c6-color);
     background-color: var(--c1-color);
@@ -137,12 +139,8 @@ h3 {
     gap: 2rem;
     margin: 2rem;
 }
-
 .smallProduct {
     display: grid;
-}
-.smallProduct a {
-    text-align: end;
 }
 .brandname {
     text-transform: uppercase;
@@ -195,7 +193,6 @@ p.discount {
     list-style-type: none;
     align-items: center;
     font-size: var(--size0);
-    background-color: var(--c3-color);
     border-bottom: 1px solid var(--c4-color);
     padding: 1rem;
 }
@@ -271,7 +268,7 @@ dd {
     background-color: var(--c6-color);
     padding: .7rem 1.3rem .7rem 1.3rem;
     right: 0;
-    bottom: 25%;
+    bottom: 20%;
     opacity: .9;
 }
 
@@ -307,6 +304,19 @@ dd {
     }
     .mainNav h1{
         text-align: left;
+        padding: 0;
+    }
+    .sectionHeadline {
+        height: 20vh;
+        margin-bottom: 3vh;
+    }
+    .breadcrumbs {
+        height: 4vh;
+    }
+    #categoryAccessories, .mainNav, .categoryList, .breadcrumbs {
+        max-width: 1366px;
+        padding: 0 24px;
+        margin: 0 auto;
     }
 }
 
@@ -320,5 +330,9 @@ dd {
     .purchaseBox {
       order: 2;
       transform: translate(-50px, -100px);
+    }
+    #categoryAccessories, .mainNav, .categoryList, .breadcrumbs {
+        max-width: 1366px;
+        margin: 0 auto;
     }
   }
