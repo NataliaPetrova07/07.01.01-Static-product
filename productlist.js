@@ -54,7 +54,3 @@ function showProduct(product) {
   // append
   parent.appendChild(copy);
 }
-const more = function load12more(product) {
-  const parent = document.querySelector("#categoryAccessories");
-  parent.appendChild(more);
-};

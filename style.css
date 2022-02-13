@@ -136,7 +136,7 @@ header {
     color: var(--c5-color);
     font-weight: 600;
     text-transform: uppercase;
-    font-size: var(--size1);
+    font-size: var(--size2);
     letter-spacing: .1rem;
     padding: 2rem;
 }
@@ -149,6 +149,7 @@ header {
 
 .categoryList section:hover {
     transform: scale(1.02);
+    background-color: var(--c7-color);
 }
 
  #categoryAccessories {
@@ -303,8 +304,8 @@ dd {
 
 .home h2 {
     text-align: center;
-    font-size: 10vh;
-    margin: 32vh 0;
+    font-size: 8vw;
+    margin: 30vh 0;
 }
 
 .productgrid {
@@ -422,6 +423,9 @@ button:hover {
     .purchaseBox form {
         margin: 3rem 0;
     }
+    .burgermenu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -434,3 +438,7 @@ button:hover {
         padding: 6rem 0;
     }
   }
+
+.welcome h2:hover {
+    transform: scale(1.1);
+}
