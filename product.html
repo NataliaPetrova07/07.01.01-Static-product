@@ -8,20 +8,21 @@
     <title>Product</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="product">
     <header>
         <div class="mainNav">
-        <h1>APPEAL</h1>
-        <nav class="desktop">
-            <a href="category.html">Categories</a>
-            <a href="category.html">Brands</a>
-            <a href="category.html">Seasons</a>
-        </nav>
-    </div>
+            <h1>APPEAL</h1>
+            <nav class="desktop">
+                <a href="category.html">Categories</a>
+                <a href="category.html">Brands</a>
+                <a href="category.html">Seasons</a>
+            </nav>
+        </div>
     </header>
     <main>
         <ol class="breadcrumbs">
@@ -33,38 +34,44 @@
             <div class="arrow">></div>
             <li class="productname liCurrent">PUMA Navy Blue Backpack</li>
         </ol>
-        <img class="productimage" src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Puma Deck Navy Blue Backpack" />
-        <section class="purchaseBox">
-            <h3><span class="brandname">Puma</span> Deck Navy Blue Backpack</h3>
-            <p>Nike | Tshirts</p>
-            <form>
-                <label>Choose a size
-                    <select name="size">
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                        <option>XL</option>
-                    </select>
-                </label>
-                <button>Add to basket</button>
-            </form>
-        </section>
-        <section class="info">
-            <h2>Product Information</h2>
-            <dl>
-                <dt>Model name</dt>
-                <dd>Deck Navy Blue Backpack</dd>
-                <dt>Color</dt>
-                <dd>Blue</dd>
-                <dt>Inventory number</dt>
-                <dd>1525</dd>
-            </dl>
-            <h1>Puma</h1>
-            <p>Sportswear legend PUMA is on a mission to be the fastest sports brand in the world. A big believer in
-                setting and smashing goals, its range of clothing, activewear and accessories is designed to help you do
-                just that. </p>
-        </section>
+        <div class="productgrid">
+            <img class="productimage" src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
+                alt="Puma Deck Navy Blue Backpack" />
+                <div class="productText">
+            <section class="purchaseBox">
+                <h3 class="productpageh3">Deck Navy Blue Backpack</h3>
+                <p>Casual Shoes</p>
+                <div class="productprices">
+                    <div class="nodiscount">
+                        <p class="productprice">DKK 1299,-</p>
+                    </div>             
+                </div>
+                <form>
+                    <label>
+                        <p>Choose a size</p>
+                        <select name="size">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </label>
+                    <button>Add to basket</button>
+                </form>
+            </section>
+            <section class="info">
+                <dl>
+                    <dt>Inventory number</dt>
+                    <dd>1525</dd>
+                </dl>
+            </section>
+        </div>
+        </div>
     </main>
+    <footer>
+        <p>All used data comes from:</p>
+        <a href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset">www.kaggle.com</a>
+    </footer>
     <script src="product.js"></script>
 
 </body>
