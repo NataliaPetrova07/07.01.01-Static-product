@@ -19,13 +19,9 @@ function showCategory(category) {
     const template = document.querySelector("#categoryListTemplate").content;
     // clone it
     const copy = template.cloneNode(true);
-    // change image
-    // copy.querySelector(".categoryImg img").src=`https://kea-alt-del.dk/t7/images/webp/640/${category.category}.webp`;
-    // copy.querySelector(".categoryImg img").alt=category;
     // change content
     copy.querySelector("a").setAttribute("href", `productlist.html?category=${category.category}`);
     copy.querySelector("h2").textContent = `${category.category}`;
-
     // grab parent
     const parent = document.querySelector("#CL");
     // append
